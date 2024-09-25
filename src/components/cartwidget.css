@@ -1,0 +1,9 @@
+
+.carrito {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 25px;
+    font-weight: 550;
+    font-size: 17px;
+}

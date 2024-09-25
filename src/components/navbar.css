@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(199, 49, 49);
+}
+
+.titulo {
+    font-family: "Dancing Script";
+    font-weight: bolder;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.seleccionar {
+    border: none;
+    background: none;
+    padding: o,5px;
+    font-weight: 550;
+    font-size: 17px;
+}
