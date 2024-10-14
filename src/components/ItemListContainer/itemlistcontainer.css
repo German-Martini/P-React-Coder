@@ -1,0 +1,24 @@
+.itemlist{
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.itemlistcontainer .productos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.itemlistcontainer .productos .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
