@@ -11,7 +11,7 @@ function App() {
     <div>
       <BrowserRouter>
       <NavBar /> 
-
+    
       <Routes>
       <Route path='/' element={<ItemListContainer saludo="📚 Encuentra todo lo que necesitas en nuestra librería 📚" />} />
       <Route path='/category/:idCategory' element={<ItemListContainer saludo="📚 Encuentra todo lo que necesitas en nuestra librería 📚" />} />

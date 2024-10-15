@@ -8,17 +8,17 @@ const NavBar = () => {
 
             <ul className="seleccionar">
                 <li>
-                    <Link to="/category/escolares">ESCOLARES </Link>
+                    <Link to="/category/escolares" style={{ textDecoration: 'none', color: 'inherit' }}>ESCOLARES </Link>
                 </li>
                 <li>
-                    <Link to="/category/oficina">OFICINA</Link>
+                    <Link to="/category/oficina" style={{ textDecoration: 'none', color: 'inherit' }}>OFICINA</Link>
                 </li>
                 <li>
-                    <Link to="/category/artistica">ARTISTICA</Link>
+                    <Link to="/category/artistica" style={{ textDecoration: 'none', color: 'inherit' }}>ARTISTICA</Link>
                 </li>
             </ul>
 
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <p className="titulo">
                     FantasyArt
                 </p>

@@ -1,0 +1,47 @@
+.ItemDetail{
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+   margin-top: 80px;
+   margin-left: 30px;
+   
+}
+
+.imagen{
+    width: 500px;
+}
+.imagenProduct{
+    border: 3px solid black;
+}
+
+
+.info{
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.titulo2{
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.parrafo{
+ font-family: 'Times New Roman', Times, serif;
+ font-style: italic;
+ font-size: 23px;
+ font-weight: 500;
+ margin-bottom: 20px;
+}
+
+.precio{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: darkblue;
+}

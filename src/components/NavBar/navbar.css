@@ -16,6 +16,8 @@
     font-weight: bolder;
     font-size: 60px;
     font-style: italic;
+    color: black;
+    padding-right: 150px;
 }
 
 .seleccionar {
@@ -24,4 +26,24 @@
     padding: o,5px;
     font-weight: 550;
     font-size: 17px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+
+}
+
+.cartOpc{
+display: flex;
+flex-direction: row;
+gap: 20px;
+text-decoration: none; 
+  color: inherit; 
+}
+
+.opciones{
+    color: black;
 }
