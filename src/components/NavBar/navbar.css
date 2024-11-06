@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 .container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(199, 49, 49);
 }
+ 
+.linkTitulo{
+    width: 33.3%;  
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .titulo {
     font-family: "Dancing Script";
@@ -17,33 +23,52 @@
     font-size: 60px;
     font-style: italic;
     color: black;
-    padding-right: 150px;
+   
 }
 
 .seleccionar {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: none;
     background: none;
     padding: o,5px;
     font-weight: 550;
     font-size: 17px;
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
     gap: 10px;
-    align-items: center;
     color: black;
     text-decoration: none;
 
 }
 
-.cartOpc{
-display: flex;
-flex-direction: row;
-gap: 20px;
-text-decoration: none; 
-  color: inherit; 
+.seleccionar li{
+    transition: 0.3s;
 }
 
-.opciones{
-    color: black;
+
+
+.seleccionar li:hover{
+    color: aliceblue;
+    transform: scale(1.2);
+    padding: auto;
+}
+
+.cartWidget{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartWidget .carrito {
+    display: flex;
+    font-size: 20px;
+    transition: 0.3s;
+    
+}
+
+.cartWidget .carrito:hover{
+    transform: scale(1.3);
 }

@@ -1,0 +1,137 @@
+.carritoConteiner {
+    background-color: rgb(98, 98, 98);
+    min-height: 85vh;
+}
+
+.carritoTitulo {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.carritoVacio {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding: 60px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.primerP {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.segundoP {
+    font-size: 25px;
+    color: white;
+}
+
+.botonVolver {
+    font-size: 20px;
+    color: rgb(165, 23, 23);
+    font-weight: 800;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(165, 23, 23);
+    transition: 0.3s;
+}
+
+.botonVolver:hover {
+    color: rgb(251, 10, 10);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.carritoConteiner .productosCarrito {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
+    margin: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    height: 150px;
+}
+
+.imgCarrito{
+    max-height: 100%;
+}
+
+.botonCarrito {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background-color: rgb(165, 23, 23);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.botonCarrito:hover {
+    color: rgb(216, 17, 17);
+    background-color: black;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.finalizarCompra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    margin-left: 400px;
+    margin-right: 400px;
+    gap: 30px;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    color: white;
+}
+
+.precioTotal{
+    font-size: 20px;
+    font-weight: 900;
+}
+.continuar{
+    font-size: 23px;
+    color: rgb(59, 186, 59);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.continuar:hover{
+    transform: scale(1.2);
+    color: rgb(75, 229, 75);
+}
+
+.vaciarCarrito{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    background-color: rgb(165, 23, 23);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.vaciarCarrito:hover{
+    color: rgb(216, 17, 17);
+    background-color: black;
+    border: 2px solid rgb(255, 0, 0);
+}

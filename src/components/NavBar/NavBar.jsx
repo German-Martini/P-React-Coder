@@ -18,12 +18,12 @@ const NavBar = () => {
                 </li>
             </ul>
 
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }} className="linkTitulo">
                 <p className="titulo">
                     FantasyArt
                 </p>
             </Link>
-            <div>
+            <div className="cartWidget" >
                 <CartWidget />
             </div>
         </nav>

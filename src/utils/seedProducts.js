@@ -1,3 +1,6 @@
+import db from "../db/db.js"
+import { addDoc, collection } from "firebase/firestore"
+
 const products = [
     {
         id: "A1B2C3",
@@ -89,7 +92,7 @@ const products = [
         descripcion: "Set de 5 lapiceras de tinta negra.",
         precio: 200,
         img: "/img/lapiceras.jpg",
-        stock: 100
+        stock: 10
     },
     {
         id: "E4F5G6",
@@ -109,25 +112,16 @@ const products = [
         img: "/img/cuaderno.jpg",
         stock: 50
     }
-];
+]
 
-
-const getProducts = () => {
-    return new Promise((res, rej) => {
-        setTimeout(() => {
-            res(products)
-        }, 2000)
+const seedProducts = () => {
+    const productsRef = collection(db, "products")
+    products.map(( { id, ...dataProduct } )=>{
+        addDoc(productsRef, dataProduct)
     })
+
+    
+    return
 }
 
-const getProduct = (idProduct) => {
-    return new Promise((res) => {
-        setTimeout(() => {
-            const product = products.find( (product )=> product.id === idProduct) 
-            res(product) 
-        }, 2000)
-    })
-}
-
-
-export { getProducts, getProduct }
+seedProducts()
