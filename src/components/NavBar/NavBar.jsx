@@ -1,5 +1,5 @@
 import "./navbar.css"
-import CartWidget from "./CartWidget.JSX"
+import CartWidget from "./CartWidget.jsx"
 import { Link } from "react-router-dom"
 
 const NavBar = () => {
