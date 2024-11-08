@@ -1,14 +1,14 @@
 import React from 'react'
 import Item from './Item.jsx'
 
-const ItemList = ( { products }) => {
+const ItemList = ({ products }) => {
   return (
     <>
-    {
-      products.map((product) => (
-      <Item  product={product} key={product.id} />
-      ))
-    }
+      {
+        products.map((product) => (
+          <Item product={product} key={product.id} />
+        ))
+      }
     </>
   )
 }

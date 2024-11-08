@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-import FormCheckout from './FormCheckout'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { Timestamp, addDoc, collection, setDoc, doc } from 'firebase/firestore'
+import FormCheckout from './FormCheckout'
 import db from '../../db/db.js'
 import "./Checkout.css"
 
@@ -33,9 +33,9 @@ const Checkout = () => {
             total: precioTotal()
         }
 
-        if( dataForm.email === dataForm.repeatEmail){
+        if (dataForm.email === dataForm.repeatEmail) {
             uploadOrder(order)
-        }else{
+        } else {
             toast.error("Los email no coinciden")
         }
     }
@@ -64,10 +64,10 @@ const Checkout = () => {
         <div className='checkout'>
             {
                 orderId ? (
-                    <div>
-                        <h2>orden enviada correctamente</h2>
-                        <p>Guarde su numero de seguimiento: {orderId} </p>
-                        <Link to="/" >volver al inicio</Link>
+                    <div className='ordenContainer'>
+                        <h2>Orden enviada correctamente 👍</h2>
+                        <p>Guarde su numero de seguimiento: <span className='ordenSpan'>{orderId}</span></p>
+                        <Link className='botonform' to="/" >VOLVER AL INICIO</Link>
                     </div>
                 ) : (
                     <FormCheckout dataForm={dataForm} handleChangeInput={handleChangeInput} handleSubmitForm={handleSubmitForm} />

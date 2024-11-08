@@ -1,9 +1,99 @@
-.checkout{
- width: 100%;
+.checkout {
+  width: 100%;
   min-height: 84vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   background-color: rgb(98, 98, 98);
+}
+
+.formulario {
+  background-color: rgb(54, 54, 54);
+  padding: 40px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 30px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.formulario h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.imputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.imputForm {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.imputForm:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(251, 10, 10);
+}
+
+.botonConainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.botonform {
+  font-size: 20px;
+  color: rgb(165, 23, 23);
+  font-weight: 800;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid rgb(165, 23, 23);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.botonform:hover {
+  color: rgb(251, 10, 10);
+  border: 3px solid rgb(255, 0, 0);
+}
+
+.ordenContainer {
+  background-color: rgb(54, 54, 54);
+  padding: 50px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.ordenContainer h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.ordenContainer p {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.ordenSpan {
+  color: rgb(240, 18, 18);
 }

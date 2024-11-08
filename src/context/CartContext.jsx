@@ -8,28 +8,28 @@ const CartProvider = ({ children }) => {
 
     const addProductInCart = (newProduct) => {
         const condicion = isInCart(newProduct.id)
-        if(condicion){
-           let nuevoCarrito = [...cart]
-           nuevoCarrito.forEach((productCart)=> {
-            if(productCart.id === newProduct.id){
+        if (condicion) {
+            let nuevoCarrito = [...cart]
+            nuevoCarrito.forEach((productCart) => {
+                if (productCart.id === newProduct.id) {
 
-            const nuevaCantidad = productCart.cantidad + newProduct.cantidad
-            if(nuevaCantidad > productCart.stock){
-                toast.warning("superaste el stock")
-                return productCart
-            }else{
-                productCart.cantidad = productCart.cantidad + newProduct.cantidad
-            }
-            }s
-           })
-           setCart(nuevoCarrito)
-        }else{
+                    const nuevaCantidad = productCart.cantidad + newProduct.cantidad
+                    if (nuevaCantidad > productCart.stock) {
+                        toast.warning("superaste el stock")
+                        return productCart
+                    } else {
+                        productCart.cantidad = productCart.cantidad + newProduct.cantidad
+                    }
+                } s
+            })
+            setCart(nuevoCarrito)
+        } else {
             setCart([...cart, newProduct])
         }
     }
 
-    const isInCart = (idProduct)=> {
-        return cart.some((productCart)=> productCart.id === idProduct)
+    const isInCart = (idProduct) => {
+        return cart.some((productCart) => productCart.id === idProduct)
     }
 
     const totalCantidad = () => {
@@ -47,13 +47,14 @@ const CartProvider = ({ children }) => {
         setCart(productsFilter)
     }
 
-    const vaciarCarrito = ()=> {
+    const vaciarCarrito = () => {
         setCart([])
+        toast.success("Vaciaste el carrito")
     }
 
 
     return (
-        <CartContext.Provider value={{ cart, addProductInCart, totalCantidad, precioTotal, eliminarProducto,vaciarCarrito }} >
+        <CartContext.Provider value={{ cart, addProductInCart, totalCantidad, precioTotal, eliminarProducto, vaciarCarrito }} >
             {children}
         </CartContext.Provider>
     )

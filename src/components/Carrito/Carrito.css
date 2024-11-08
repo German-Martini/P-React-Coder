@@ -1,12 +1,13 @@
 .carritoConteiner {
     background-color: rgb(98, 98, 98);
     min-height: 85vh;
+    padding: 20px;
 }
 
 .carritoTitulo {
     text-align: center;
     padding: 20px;
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
     text-decoration: underline;
 }
@@ -67,7 +68,7 @@
     height: 150px;
 }
 
-.imgCarrito{
+.imgCarrito {
     max-height: 100%;
 }
 
@@ -102,24 +103,26 @@
     color: white;
 }
 
-.precioTotal{
+.precioTotal {
     font-size: 20px;
     font-weight: 900;
 }
-.continuar{
+
+.continuar {
     font-size: 23px;
-    color: rgb(59, 186, 59);
+    color: rgb(63, 181, 33);
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 900;
     transition: 0.3s;
 }
-.continuar:hover{
+
+.continuar:hover {
     transform: scale(1.2);
-    color: rgb(75, 229, 75);
+    color: rgb(87, 255, 9);
 }
 
-.vaciarCarrito{
+.vaciarCarrito {
     font-size: 15px;
     color: rgb(0, 0, 0);
     font-weight: 800;
@@ -130,7 +133,7 @@
     transition: 0.4s;
 }
 
-.vaciarCarrito:hover{
+.vaciarCarrito:hover {
     color: rgb(216, 17, 17);
     background-color: black;
     border: 2px solid rgb(255, 0, 0);
