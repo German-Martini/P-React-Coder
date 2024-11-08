@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount.jsx'
+import Itemcount from '../ItemCount/Itemcount'
 import "./ItemDetail.css"
 
 const ItemDetail = ({ product, addProduct, hideItemCount }) => {
@@ -18,7 +18,7 @@ const ItemDetail = ({ product, addProduct, hideItemCount }) => {
             hideItemCount === true ? (
               <Link className='finalizarCompra' to="/cart" >Finalizar compra</Link>
             ) : (
-              <ItemCount stock={product.stock} addProduct={addProduct} />
+              <Itemcount stock={product.stock} addProduct={addProduct} />
             )
           }
         </div>

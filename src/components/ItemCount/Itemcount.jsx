@@ -3,7 +3,7 @@ import { useState } from 'react'
 import "../ItemCount/ItemCount.css"
 
 
-const ItemCount = ({ stock, addProduct }) => {
+const Itemcount = ({ stock, addProduct }) => {
 
     const [count, setCount] = useState(1)
 
@@ -34,4 +34,4 @@ const ItemCount = ({ stock, addProduct }) => {
     )
 }
 
-export default ItemCount
+export default Itemcount
